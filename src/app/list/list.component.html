@@ -1,0 +1,14 @@
+<h1>TASK LIST</h1>
+<div id="tmain">
+    
+    <div id="tasks" *ngFor="let t of task;let i=index">
+        <h2>{{t.title}}</h2>
+        <p>{{t.description }}</p>
+        <div id="buttons">
+            <p routerLink="/edit/{{t.id}}"><img src="/assets/edit-alt-regular-24.png" alt=""></p>
+            <p (click)="deleteInfo(t.id)"><img src="/assets/trash-regular-24.png" alt=""></p>
+        </div>
+    </div>
+
+</div>
+<div id="add" routerLink="/add-user">+</div>

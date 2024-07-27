@@ -1,0 +1,21 @@
+<div>
+    <form (ngSubmit)="updateTask(task.id,task)">
+        <h1>UPDATE TASK</h1>
+        <div id="add-task">
+            <label for="title" class="l1">Title : </label>
+            <input type="text" placeholder="Title" id="title" name="title" #title="ngModel" class="i" [(ngModel)]="task.title" required>
+            <div class="errors" *ngIf="title.invalid && (title.touched||title.dirty)">
+                <span id="e1"> this field should not be empty</span>
+            </div>
+
+            <label for="description" class="l2">Description : </label>
+            <textarea placeholder="Description" class="t" id="description" name="description" #description="ngModel" [(ngModel)]="task.description" required></textarea>
+            <div class="errors" *ngIf="description.invalid && (description.touched||description.dirty)">
+                <span id="e2"> this field should not be empty</span>
+            </div>
+
+            <input type="submit" class="s" value="Update Task">
+        </div>
+    </form>
+</div>
+

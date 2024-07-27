@@ -1,0 +1,72 @@
+img{
+    width: 80%;
+    height: 80%;
+}
+#buttons{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 50px;
+    margin-left: 90%;
+
+}
+#tmain{
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #00ce4f white;
+    height: 55%;
+}
+h1{
+    background: #0180c4;
+    width: 100%;
+    padding: 7.5px;
+    border-top-right-radius: 10px;
+    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+}
+#tasks{
+    width: 96%;
+    margin-left: 2%;
+    margin-bottom: 40px;
+    transition: box-shadow 0.2s;
+    
+    &:hover{
+        box-shadow: 0 0 0 5px #eeeeee;
+    }
+}
+
+#tasks h2{
+    background-color: #00ce4f;
+    color: white;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+#add{
+    font-size: 30px;
+    background: #0180c4;
+    color: white;
+    width: 45px;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    left: 90%;
+    top: 50px;
+    transition: 1.2s;
+}
+#add:hover{
+    transform: rotate(450deg);
+}
+
+@media only screen and (max-width: 600px){
+ 
+    #task{
+        width: 20%;
+        margin-left: 0;
+    }
+    #add{
+        left: 80%;
+    }
+    #buttons{
+        margin-left: 85%;
+    }
+}

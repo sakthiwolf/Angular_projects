@@ -1,0 +1,14 @@
+<div id="main">
+  <div id="task-box">
+      <aside id="aside">
+        <h2>Options</h2>
+        <a routerLink="add-user"> <img src="/assets/user-solid-24.png" alt="">Add Task</a><br>
+        <a routerLink="list"> <img src="/assets/list-ul-regular-24.png" alt="">Task List</a>
+        
+      </aside>
+      <article>
+        <router-outlet></router-outlet>
+      </article>
+  </div>
+</div>
+<p id="mini-button" (click)="side()">|||</p>
